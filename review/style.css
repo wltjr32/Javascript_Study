@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+}
+
+article {
+    border: solid 1px black;
+    margin: auto;
+    padding: 2vh;
+    width: 30%;
+}
