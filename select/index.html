@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head> <meta charset="UTF-8"> </head>
+<body>
+    <form>
+        <button type="button" onclick="add()">추가</button>
+        <button type="button" onclick="del()">삭제</button>
+        <select>
+            <option value="">--선택--</option>
+        </select>
+    </form>
+    <script>
+        function add() {
+            let opt = new Option("새 옵션", "newOption");
+            let select = document.querySelector("select");
+            select.add(opt);
+        }
+        function del() {
+            let select = document.querySelector("select");
+            select.removeChild(select.lastChild)
+        }
+    </script>
+</body>
+</html>
